@@ -1,14 +1,10 @@
 from flask import Flask, request, jsonify
 import pickle
 
-model_path = 'homework/model1.bin'
-dv_ = 'homework/dv.bin'
+input_file = 'model_C1.0.bin'
 
-with open(model_path, 'rb') as f_in:
-    model = pickle.load(f_in)
-
-with open(dv_, 'rb') as f_in:
-    dv = pickle.load(f_in)
+with open(input_file, 'rb') as f_in:
+    dv, model = pickle.load(f_in)
 
 app = Flask('churn')
 

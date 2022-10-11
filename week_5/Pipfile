@@ -5,11 +5,14 @@ name = "pypi"
 
 [packages]
 numpy = "*"
-scikit-learn = "==1.0.2"
+scikit-learn = "*"
 gunicorn = "*"
 flask = "*"
+docker = "*"
+requests = "*"
 
 [dev-packages]
+awsebcli = "*"
 
 [requires]
-python_full_version = "3.9.0"
+python_version = "3.9"
